@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        @page {
+          size: A4;
+          margin: 0;
+        }
+
+        @page :left {
+          margin-top: 1cm;
+        }
+
+        body {
+          font-family: "DejaVu Sans", sans-serif;
+          margin: 0;
+          color: #333;
+          font-size: 10pt;
+        }
+
+        .banner {
+          background-color: #2c3e50;
+          color: white;
+          padding: 1cm;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .banner h1 {
+          margin: 0;
+          font-size: 20pt;
+        }
+
+        .banner .left {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .banner .left .contact-info p {
+          margin: 2px 0;
+        }
+
+        .banner .left .languages-info {
+            font-size: 9pt;
+            margin-top: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px 10px;
+        }
+
+        .banner .left .languages-info span {
+        }
+
+        .banner .right {
+          text-align: right;
+          font-size: 9pt;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
+        .banner .right .social-link {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 2px 0;
+            white-space: nowrap;
+        }
+
+        .banner .right .social-link i {
+            font-size: 12pt;
+            flex-shrink: 0;
+        }
+
+        .banner .right .social-link a {
+            color: inherit;
+            text-decoration: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .container {
+          padding: 1cm;
+        }
+
+        h2 {
+          font-size: 14pt;
+          border-bottom: 1px solid #ccc;
+          margin-top: 25px;
+          margin-bottom: 5px;
+          color: #2c3e50;
+        }
+
+        .container h2:first-of-type {
+            margin-top: 0;
+        }
+
+        h3 {
+          font-size: 11pt;
+          margin: 12px 0 4px;
+          color: #34495e;
+        }
+
+        p, ul {
+          margin: 2px 0;
+        }
+
+        .summary {
+            text-align: justify
+        }
+
+        .competencies-list {
+          list-style: none;
+          padding-left: 0;
+          margin: 5px 0 15px 0;
+        }
+
+        .competencies-list li {
+          margin-bottom: 5px;
+          line-height: 1.4;
+          font-size: 10pt;
+          color: #333;
+        }
+
+        .competencies-list li strong {
+          color: #2c3e50;
+          margin-right: 5px;
+        }
+
+
+        .job-meta {
+          font-style: italic;
+          font-size: 9pt;
+          color: #555;
+        }
+
+        .stack {
+          font-size: 9pt;
+          color: #666;
+          margin-bottom: 2px;
+        }
+
+        ul:not(.competencies-list) {
+          padding-left: 18px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="banner">
+    <div class="left">
+        <h1>{{ contact.name }}</h1>
+        <div class="contact-info">
+            <p>📍 {{ contact.location }}</p>
+            <p>✉️ {{ contact.email }}</p>
+            <p>📞 {{ contact.phone }}</p>
+        </div>
+        {% if languages %}
+        <div class="languages-info">
+            {% for lang_obj in languages %}
+              {% for lang_name, level in lang_obj.items() %}
+                          {{ lang_name }} ({{ level }})
+              {% endfor %}
+              {% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="right">
+        {% for social in contact.social %}
+        {% for name, link in social.items() %}
+        <div class="social-link">
+        {% if name.lower() == 'linkedin' %}
+        <!-- LinkedIn SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.7v2.1h.1c.5-.95 1.85-1.95 3.8-1.95 4.1 0 4.85 2.7 4.85 6.2V24h-4v-8.4c0-2-.04-4.6-2.8-4.6-2.8 0-3.2 2.2-3.2 4.5V24h-4V8z"/>
+        </svg>
+        {% elif name.lower() == 'github' %}
+        <!-- GitHub SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .5C5.648.5.5 5.648.5 12c0 5.084 3.292 9.385 7.864 10.906.575.106.785-.25.785-.557 0-.275-.01-1.003-.015-1.97-3.2.695-3.876-1.543-3.876-1.543-.523-1.33-1.278-1.684-1.278-1.684-1.046-.716.08-.701.08-.701 1.157.081 1.767 1.188 1.767 1.188 1.028 1.762 2.698 1.253 3.354.958.104-.744.402-1.254.73-1.543-2.553-.29-5.238-1.277-5.238-5.684 0-1.256.45-2.284 1.186-3.088-.12-.29-.515-1.458.112-3.04 0 0 .97-.31 3.176 1.176.92-.256 1.906-.384 2.886-.39.98.006 1.967.134 2.888.39 2.205-1.486 3.174-1.176 3.174-1.176.63 1.582.234 2.75.114 3.04.738.804 1.184 1.832 1.184 3.088 0 4.417-2.69 5.39-5.254 5.674.414.358.78 1.062.78 2.14 0 1.547-.015 2.796-.015 3.176 0 .31.208.67.79.556C20.71 21.383 24 17.084 24 12c0-6.352-5.148-11.5-12-11.5z"/>
+        </svg>
+        {% endif %}
+
+            <a href="{{ link }}" style="color: inherit; text-decoration: none;">{{ link }}</a>
+        </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="container">
+    <h2>Summary</h2>
+    <div class="summary">
+        <p>{{ summary.strip() }}</p>
+    </div>
+
+    <h2>Competencies</h2>
+    <ul class="competencies-list">
+        {# Iterate over each line of the competencies string #}
+        {% for line in competencies.split('\n') %}
+        {# Check if the line contains a colon to separate category and skills, and is not an empty line #}
+        {% if ':' in line and line | trim %}
+        {# Split the line once at the first colon #}
+        {% set parts = line.split(':', 1) %}
+        {# Extract the category name, remove leading '- ' and trim whitespace using 'trim' filter #}
+        {% set category = parts[0] | replace('- ', '') | trim %}
+        {# Extract the skills string and trim whitespace using 'trim' filter #}
+        {% set skills = parts[1] | trim %}
+        {# Render the list item with bold category and skills #}
+        <li><strong>{{ category }}:</strong> {{ skills }}</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+
+    <h2>Experience</h2>
+    {% for exp in experiences %}
+    <h3>{{ exp.title }}</h3>
+    <div class="job-meta">{{ exp.company }} — {{ exp.date.start }} to {{ exp.date.end or "Present" }}</div>
+    {% if exp.stack %}
+    <div class="stack">
+        {% if exp.stack is string %}
+        {{ exp.stack | replace('\n', ', ') }}
+        {% else %}
+        {{ exp.stack | join(', ') }}
+        {% endif %}
+    </div>
+    {% endif %}
+    <ul>
+        {% for item in exp.content or exp.bullets %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <h2>Education</h2>
+    {% for edu in education %}
+    <h3>{{ edu.title }}</h3>
+    <div class="job-meta">{{ edu.institution }} — {{ edu.date.start }} to {{ edu.date.end }}</div>
+    {% if edu.speciality %}<p><strong>Specialization:</strong> {{ edu.speciality }}</p>{% endif %}
+    {% endfor %}
+
+    <h2>Interests</h2>
+    <ul>
+        {% for interest in interests %}
+        <li>{{ interest }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+</body>
+</html>

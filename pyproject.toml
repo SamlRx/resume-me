@@ -1,0 +1,23 @@
+[project]
+name = "resume-me"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SamlRx", email = "rouxsamuel@proton.me" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "jinja2>=3.1.6",
+    "jsonschema>=4.24.0",
+    "python-dotenv>=1.1.0",
+    "pyyaml>=6.0.2",
+    "weasyprint>=65.1",
+]
+
+[project.scripts]
+resume-me = "resume_me:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

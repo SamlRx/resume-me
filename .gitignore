@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.ideas/
+
+# Virtual environments
+.venv
+
+# DotEnv files
+.env
+
+# Generated files
+target/(*.pdf)

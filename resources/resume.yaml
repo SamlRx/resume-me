@@ -1,0 +1,180 @@
+contact:
+  name: Samuel Roux
+  location: Tours, France
+  email:
+  phone:
+  social:
+    - LinkedIn: https://linkedin.com/in/samuel-roux
+    - GitHub: https://github.com/SamlRx
+
+summary: >
+  Seasoned Data Engineering Leader with over 15 years of experience in architecting and scaling data platforms. 
+  Proven expertise in leading cross-functional teams, implementing cloud-native solutions, 
+  and driving data strategies that align with business objectives. 
+  Adept at fostering collaborative environments, mentoring engineers, and delivering high-impact scalable solutions.
+
+competencies: |
+  - Leadership & Strategy: Team Building, Cross-functional Collaboration, Agile Methodologies
+  - Data Engineering: ETL and ELT Pipelines, Batch and Real-time Data Processing, Data Modeling
+  - Cloud Platforms: AWS, GCP
+  - Technologies:  Kafka, Spark, Beam, Dataflow, DuckDB, Debezium, Terraform, Kubernetes, Docker 
+  - Programming: Python, Java, SQL
+  - Datastores: PostgreSQL, MongoDB, Hive, BigQuery, S3, Iceberg
+  - System Design: Medallion Data Architecture, SOLID, Hexagonal Architecture
+  - Tools: GitHub, GitLab, Jenkins, CircleCI, Docker Compose, Maven
+
+experiences:
+  - title: Engineering Manager Data Platform - Hands On - Team of 4
+    company: Crossbeam (GTM)
+    stack:
+      - Aurora
+      - PostgreSQL
+      - AWS
+      - GitLab
+      - Kafka
+      - Temporal
+      - Debezium
+      - DuckDB
+    date:
+      start: 2024/09/01
+      end:
+    content:
+      - Established and led a distributed Data Platform team across three time zones, enhancing data infrastructure resilience and scalability.
+      - Architected a cloud-native data solution enabling near real-time access to business metrics.
+      - Implemented career development programs, resulting in increased team retention and technical ownership.
+  - title: Staff Data Engineer
+    company: Crossbeam (GTM)
+    stack:
+      - Dataflow
+      - Apache Beam
+      - PubSub
+      - Python
+      - Kubernetes
+      - Terraform
+      - MongoDB
+      - Docker
+      - PostgreSQL
+      - Debezium
+    date:
+      start: 2023/01/01
+      end: 2024/09/01
+    content:
+      - Defined scaling principles for data infrastructure, supporting rapid horizontal growth.
+      - Developed production-grade streaming and batch pipelines using GCP, Apache Beam, and MongoDB.
+      - Introduced CI workflows and infrastructure as code practices, increasing deployment velocity and reliability.
+      - Collaborated with product and engineering teams to translate complex data needs into scalable solutions.
+  - title: Tech Lead Data  - Hands On - Team of 7
+    company: Harmonie Mutuelle (Health Insurance)
+    stack:
+      - Spark
+      - Kafka
+      - Java
+      - Hive
+      - HBase
+      - Maven
+      - Jenkins
+    date:
+      start: 2019/04/01
+      end: 2022/12/31
+    content:
+      - Led a team of seven in delivering scalable, high-performance data solutions aligned with health insurance initiatives.
+      - Executed a roadmap for a modernized data platform, enabling real-time analytics and regulatory reporting.
+      - Delivered complex batch and streaming data pipelines for fraud detection, claims processing, and member insights.
+      - Established engineering excellence standards, including automated testing and CI/CD workflows.
+  - title: Big Data Engineer
+    company: Harmonie Mutuelle (Health Insurance)
+    stack:
+      - Spark
+      - Kafka
+      - Java
+      - Hive
+      - HBase
+      - Maven
+      - Jenkins
+    date:
+      start: 2018/01/01
+      end: 2019/04/01
+    bullets:
+      - Designed scalable real-time and batch data architectures, improving system throughput and reducing technical debt.
+      - Introduced performance benchmarks and coding guidelines, enhancing maintainability and onboarding speed.
+      - Developed CI/CD pipelines, accelerating release cycles and enabling continuous delivery to production.
+  - title: Enterprise Architect
+    company: Harmonie Mutuelle (Health Insurance)
+    stack:
+      - Datastage
+      - Java
+      - SQL
+      - Kafka
+      - Maven
+      - Jenkins
+    date:
+      start: 2014/07/01
+      end: 2017/12/31
+    content:
+      - Developed and executed IT strategy roadmaps, aligning data architecture with long-term business goals and enabling scalable digital transformation initiatives.
+      - Established data processing best practices, optimizing system performance and resource efficiency across legacy and modern platforms.
+      - Standardized engineering workflows and tooling, improving developer productivity and reducing deployment friction through CI integration and code quality practices.
+  - title: Data Engineer
+    company: Harmonie Mutuelle (Health Insurance)
+    stack:
+      - Datastage
+      - Oracle
+      - PL/SQL
+    date:
+      start: 2011/06/01
+      end: 2014/06/30
+    content:
+      - Developed and maintained ETL processes using Datastage, Oracle, and PL/SQL, ensuring data integrity and availability.
+      - Collaborated with business stakeholders to define data requirements and deliver actionable insights.
+  - title: Data Engineer
+    company: Business & Decision (Services)
+    stack:
+      - Datastage
+      - Oracle
+      - PL/SQL
+      - Siebel
+    date:
+      start: 2009/02/01
+      end: 2010/12/31
+    content:
+      - Designed and implemented data integration solutions using Datastage, enhancing data flow efficiency.
+      - Worked with cross-functional teams to deliver data solutions that supported business intelligence initiatives.
+  - title: Full Stack Developer
+    company: Moustic Multimédia (Web development)
+    stack:
+      - PHP
+      - Joomla
+      - CSS
+      - Action Script
+      - MySQL
+    date:
+      start: 2008/06/01
+      end: 2008/08/31
+  - title: Business Intelligence Developer
+    company: VM-Matériaux (Building materials)
+    date:
+      start: 2007/04/01
+      end: 2007/08/31
+    stack:
+      - Microsoft Reporting Services
+      - PL/SQL
+
+education:
+    - title: Master's Degree in Computer Science
+      institution: University of La Rochelle
+      date:
+        start: 2007
+        end: 2009
+      speciality: System Design and Architecture
+    - title: Bachelor's Degree in Software Engineering and Mathematics
+      institution: University of La Rochelle
+      date:
+          start: 2004
+          end: 2007
+languages:
+  - French: Native
+  - English: Fluent
+
+interests:
+  - Martial Arts Practitioner (17+ years)
+  - Maker with a focus on 3D Printing and Woodworking
