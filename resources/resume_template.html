@@ -239,9 +239,9 @@
 
     <h2>Education</h2>
     {% for edu in education %}
-    <h3>{{ edu.title }}</h3>
+    <h3>{{ edu.title }}{% if edu.speciality %} - {{ edu.speciality }}{% endif %}</h3>
+
     <div class="job-meta">{{ edu.institution }} — {{ edu.date.start }} to {{ edu.date.end }}</div>
-    {% if edu.speciality %}<p><strong>Specialization:</strong> {{ edu.speciality }}</p>{% endif %}
     {% endfor %}
 
     <h2>Interests</h2>

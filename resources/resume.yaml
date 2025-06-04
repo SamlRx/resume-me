@@ -147,6 +147,9 @@ experiences:
       - CSS
       - Action Script
       - MySQL
+    content:
+        - Developed and maintained web applications using PHP, Joomla, and MySQL.
+        - Collaborated with designers to implement responsive web designs and improve site performance.
     date:
       start: 2008/06/01
       end: 2008/08/31
@@ -155,9 +158,14 @@ experiences:
     date:
       start: 2007/04/01
       end: 2007/08/31
+    content:
+      - Structured the data warehouse and implemented ETL processes using PL/SQL and DB2.
+      - Developed reports using Microsoft Reporting Services.
     stack:
       - Microsoft Reporting Services
+      - SQL Server
       - PL/SQL
+      - DB2
 
 education:
     - title: Master's Degree in Computer Science
@@ -178,3 +186,4 @@ languages:
 interests:
   - Martial Arts Practitioner (17+ years)
   - Maker with a focus on 3D Printing and Woodworking
+  - Open Source & Linux Enthusiast
