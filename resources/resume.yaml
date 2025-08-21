@@ -40,8 +40,8 @@ experiences:
       end:
     content:
       - Established and led a distributed Data Platform team across three time zones, enhancing data infrastructure resilience and scalability.
-      - Architected a cloud-native data solution enabling near real-time access to business metrics.
-      - Implemented career development programs, resulting in increased team retention and technical ownership.
+      - Architected a cloud-native data solution enabling product team autonomy to build Data Pipelines.
+      - Mentored and developed engineers, driving career growth, retention, and increased ownership.
   - title: Staff Data Engineer
     company: Crossbeam (GTM)
     stack:
