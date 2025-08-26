@@ -36,7 +36,7 @@ experiences:
       - Debezium
       - DuckDB
     date:
-      start: 2024/09/01
+      start: 2024/09
       end:
     content:
       - Established and led a distributed Data Platform team across three time zones, enhancing data infrastructure resilience and scalability.
@@ -56,8 +56,8 @@ experiences:
       - PostgreSQL
       - Debezium
     date:
-      start: 2023/01/01
-      end: 2024/09/01
+      start: 2023/01
+      end: 2024/09
     content:
       - Defined scaling principles for data infrastructure, supporting rapid horizontal growth.
       - Developed production-grade streaming and batch pipelines using GCP, Apache Beam, and MongoDB.
@@ -74,8 +74,8 @@ experiences:
       - Maven
       - Jenkins
     date:
-      start: 2019/04/01
-      end: 2022/12/31
+      start: 2019/04
+      end: 2022/12
     content:
       - Led a team of seven in delivering scalable, high-performance data solutions aligned with health insurance initiatives.
       - Executed a roadmap for a modernized data platform, enabling real-time analytics and regulatory reporting.
@@ -92,8 +92,8 @@ experiences:
       - Maven
       - Jenkins
     date:
-      start: 2018/01/01
-      end: 2019/04/01
+      start: 2018/01
+      end: 2019/04
     bullets:
       - Designed scalable real-time and batch data architectures, improving system throughput and reducing technical debt.
       - Introduced performance benchmarks and coding guidelines, enhancing maintainability and onboarding speed.
@@ -108,8 +108,8 @@ experiences:
       - Maven
       - Jenkins
     date:
-      start: 2014/07/01
-      end: 2017/12/31
+      start: 2014/07
+      end: 2017/12
     content:
       - Developed and executed IT strategy roadmaps, aligning data architecture with long-term business goals and enabling scalable digital transformation initiatives.
       - Established data processing best practices, optimizing system performance and resource efficiency across legacy and modern platforms.
@@ -121,8 +121,8 @@ experiences:
       - Oracle
       - PL/SQL
     date:
-      start: 2011/06/01
-      end: 2014/06/30
+      start: 2011/06
+      end: 2014/06
     content:
       - Developed and maintained ETL processes using Datastage, Oracle, and PL/SQL, ensuring data integrity and availability.
       - Collaborated with business stakeholders to define data requirements and deliver actionable insights.
@@ -134,8 +134,8 @@ experiences:
       - PL/SQL
       - Siebel
     date:
-      start: 2009/02/01
-      end: 2010/12/31
+      start: 2009/02
+      end: 2010/12
     content:
       - Designed and implemented data integration solutions using Datastage, enhancing data flow efficiency.
       - Worked with cross-functional teams to deliver data solutions that supported business intelligence initiatives.
@@ -151,13 +151,13 @@ experiences:
         - Developed and maintained web applications using PHP, Joomla, and MySQL.
         - Collaborated with designers to implement responsive web designs and improve site performance.
     date:
-      start: 2008/06/01
-      end: 2008/08/31
+      start: 2008/06
+      end: 2008/08
   - title: Business Intelligence Developer
     company: VM-Matériaux (Building materials)
     date:
-      start: 2007/04/01
-      end: 2007/08/31
+      start: 2007/04
+      end: 2007/08
     content:
       - Structured the data warehouse and implemented ETL processes using PL/SQL and DB2.
       - Developed reports using Microsoft Reporting Services.
