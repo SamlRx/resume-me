@@ -8,24 +8,21 @@ contact:
     - GitHub: https://github.com/SamlRx
 
 summary: >
-  Seasoned Data Engineering Leader with over 15 years of experience in architecting and scaling data platforms. 
-  Proven expertise in leading cross-functional teams, implementing cloud-native solutions, 
-  and driving data strategies that align with business objectives. 
-  Adept at fostering collaborative environments, mentoring engineers, and delivering high-impact scalable solutions.
+  Seasoned Data Engineering Leader with over 15 years of experience designing and implementing scalable, cloud-native architectures that power high-growth products. Proven expertise in leading cross-functional teams, aligning data strategy with business goals, and delivering resilient platforms capable of supporting millions of events daily.
 
 competencies: |
   - Leadership & Strategy: Team Building, Cross-functional Collaboration, Agile Methodologies
-  - Data Engineering: ETL and ELT Pipelines, Batch and Real-time Data Processing, Data Modeling
+  - Data Engineering: ETL and ELT Pipelines, Batch and Real-time Data Processing, Event Driven Architectures
   - Cloud Platforms: AWS, GCP
-  - Technologies:  Kafka, Spark, Beam, Dataflow, DuckDB, Debezium, Terraform, Kubernetes, Docker 
-  - Programming: Python, Java, SQL
+  - Technologies: Kafka, Spark, Dataflow, DuckDB, Debezium, Terraform, Kubernetes, Docker 
+  - Programming: Python, Java, Clojure, SQL
   - Datastores: PostgreSQL, MongoDB, Hive, BigQuery, S3, Iceberg
-  - System Design: Medallion Data Architecture, SOLID, Hexagonal Architecture
-  - Tools: GitHub, GitLab, Jenkins, CircleCI, Docker Compose, Maven
+  - System Design: Medallion Architecture, SOLID, Hexagonal Architecture
+  - Build Tools: GitHub, GitLab, Jenkins, CircleCI, Docker Compose, Maven
 
 experiences:
-  - title: Engineering Manager Data Platform - Hands On - Team of 4
-    company: Crossbeam (GTM)
+  - title: Engineering Manager Data Platform - Hands On - Team of 5
+    company: Crossbeam (Startup)
     stack:
       - Aurora
       - PostgreSQL
@@ -39,11 +36,12 @@ experiences:
       start: 2024/09
       end:
     content:
-      - Established and led a distributed Data Platform team across three time zones, enhancing data infrastructure resilience and scalability.
-      - Architected a cloud-native data solution enabling product team autonomy to build Data Pipelines.
+      - Built and led a distributed Data Platform team across three time zones in a fast-paced startup environment, fostering collaboration and ownership.
       - Mentored and developed engineers, driving career growth, retention, and increased ownership.
+      - Structured data platform strategy, aligning with company OKRs and scaling for future growth.
+      - Delivered resilient, scalable data pipelines that supported rapid product growth and ensured platform reliability.
   - title: Staff Data Engineer
-    company: Crossbeam (GTM)
+    company: Crossbeam (Startup)
     stack:
       - Dataflow
       - Apache Beam
@@ -59,8 +57,8 @@ experiences:
       start: 2023/01
       end: 2024/09
     content:
-      - Defined scaling principles for data infrastructure, supporting rapid horizontal growth.
-      - Developed production-grade streaming and batch pipelines using GCP, Apache Beam, and MongoDB.
+      - Defined scaling principles for data pipelines and infrastructure, enabling seamless horizontal growth under.
+      - Developed production-grade streaming and batch pipelines using GCP, Dataflow, MongoDB and PostgreSQL.
       - Introduced CI workflows and infrastructure as code practices, increasing deployment velocity and reliability.
       - Collaborated with product and engineering teams to translate complex data needs into scalable solutions.
   - title: Tech Lead Data  - Hands On - Team of 7
